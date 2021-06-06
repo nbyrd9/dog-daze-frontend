@@ -7,7 +7,7 @@ class DogActions extends React.Component {
 
     render (){
     
-        let dog = this.props.dogs.filter(dog => dog.id == this.props.match.params.dogId)[0]
+        let dog = this.props.dogs.filter(dog => dog.id === this.props.match.params.dogId)[0]
         const actionsList = dog.dog_actions.map((action, i) => <p key={i}><strong>{action.date}</strong><br/><strong>Time: </strong>{action.time}<br/>
         <br/><strong>Kind:</strong> {action.kind}<br/><br/><strong>Name:</strong> {action.name}<br/><br/><strong>Description: </strong>{action.description}<br/>
         
@@ -37,4 +37,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(DailyActions);
+export default connect(mapStateToProps)(DogActions);

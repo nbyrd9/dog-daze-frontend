@@ -1,16 +1,17 @@
-import DogsContainer from './dogs/DogsContainer'
-import NavBar from './components/NavBar'
-function App(){
+import React from 'react';
+ import Home from './components/Home'
+ import NavBar from './components/NavBar';
+ import Resources from './components/Resources';
+
+ function App(){
   return (
         <>
           <NavBar />
-          <DogsContainer />
+          <Home />
+          <Resources />
         </>
       )
 }
 
 
-
-
-
-export default App
+export default App;

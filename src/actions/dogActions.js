@@ -13,7 +13,7 @@ export const getDogActions = (dogId) => {
 export const addActivity = (activity, dogId) => {
     return(dispatch) => {
         dispatch({type: "ADD_ACTIVITY"}, activity)
-        return fetch(`http://localhost:3000/dogs/${dogId}/daily_activities`, {
+        return fetch(`http://localhost:3000/dogs/${dogId}/dog_actions`, {
             method: "POST",
             body: JSON.stringify(activity),
             headers: { 
