@@ -1,4 +1,4 @@
-export default (state = {dogs: [], loading:false, value: ''}, action) => {
+export default function dogReducer(state = {dogs: [], loading:false, value: ''}, action) {
     switch(action.type){
         case "LOADING_DOGS":
             return {

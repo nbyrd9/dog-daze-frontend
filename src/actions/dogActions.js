@@ -1,7 +1,7 @@
 export const getDogActions = (dogId) => {
     return (dispatch) => {
        dispatch({type: "LOADING_ACTIVITIES"}) 
-       return fetch(`http://localhost:3000/dogs/${dogId}`)
+       return fetch(`http://localhost:3001/dogs/${dogId}`)
        .then(res => res.json())
        .then(dog => dispatch({type: "ACTIONS_LOADED", payload: dog}))
        .catch(error => {
@@ -13,7 +13,7 @@ export const getDogActions = (dogId) => {
 export const addAction = (action, dogId) => {
     return(dispatch) => {
         dispatch({type: "ADD_action"}, action)
-        return fetch(`http://localhost:3000/dogs/${dogId}/dog_actions`, {
+        return fetch(`http://localhost:3001/dogs/${dogId}/dog_actions`, {
             method: "POST",
             body: JSON.stringify(action),
             headers: { 
