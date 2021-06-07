@@ -16,6 +16,7 @@ class DogInfo extends React.Component{
                 <h2>{dog.name}</h2>
                 <p><strong>Age: </strong>{dog.age}</p>
                 <p><strong>Breed: </strong>{dog.breed}</p>
+                <br></br>
             </div>
         )
 
