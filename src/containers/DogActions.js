@@ -12,7 +12,7 @@ class DogActions extends React.Component {
         const actionsList = dog.dog_actions.map((action, i) => <p key={i}><strong>Mood:</strong>{action.mood}<br/><strong>Time: </strong>{action.time}<br/>
         <br/><strong>Name:</strong> {action.name}<br/><br/><strong>Description: </strong>{action.description}<br/> </p>)
 
-        const action = actionsList.length === 0 ? "No actions" : actionsList
+        const action = actionsList.length === 0 ?  <i>No Actions Listed</i> : actionsList
 
         return(
             <div>

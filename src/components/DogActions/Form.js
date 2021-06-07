@@ -20,6 +20,8 @@ class Form extends Component {
    }
 
    onFormSubmit = event => {
+       debugger
+       console.log("submit")
        event.preventDefault();
        const activity = {...this.state}
 
@@ -37,7 +39,6 @@ class Form extends Component {
 
         return (       
             <form onSubmit={this.onFormSubmit}>
-                
                 <label>Mood:</label>
                 <input type="text" 
                             name="mood" 
@@ -64,6 +65,7 @@ class Form extends Component {
                             onChange={this.handleChange}/> 
                 <button type="submit">Submit</button>  
             </form>
+       
        )
    }
 }

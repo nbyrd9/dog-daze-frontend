@@ -14,7 +14,7 @@ const links = {
 
 const NavBar = () => {
   return (
-    <div className="navbar" >
+    <div className="topnav" style={{textAlign: "center"}} >
       <br></br>
       <NavLink to="/"style={links}>Home</NavLink>
       <NavLink to="/dogs"style={links} >Dogs</NavLink>
