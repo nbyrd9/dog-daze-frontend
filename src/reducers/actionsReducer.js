@@ -1,4 +1,4 @@
-export default (state = {dailyActions: [], loading:false}, action) => {
+export default function actionsReducer (state = {dailyActions: [], loading:false}, action) {
     switch(action.type){
         case "LOADING_ACTIVITIES":
             return {

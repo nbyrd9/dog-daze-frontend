@@ -26,7 +26,8 @@ class Dogs extends Component {
                
                 <hr />
                
-                <Route path={`${match.path}/:dogId`} render={props  => <DogActions {...props}/>}/>
+                <Route path={`${match.path}/:dogId`} render={props  => <DogActions {...props}/>}/>    
+   
             </div>
            
         )

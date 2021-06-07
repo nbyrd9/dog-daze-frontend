@@ -23,7 +23,7 @@ class Form extends Component {
        event.preventDefault();
        const activity = {...this.state}
 
-       this.props.addActivity(activity, this.props.id)
+       this.props.addAction(activity, this.props.id)
        this.setState({
         mood: '',
         name: '',

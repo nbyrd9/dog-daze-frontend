@@ -17,6 +17,7 @@ class DogInput extends React.Component {
     }
 
     handleSubmit = (event) => {
+        // debugger
         event.preventDefault();
         const dog = {...this.state}
         this.props.addDog(dog)
@@ -25,11 +26,13 @@ class DogInput extends React.Component {
             age: '',
             breed: '',
         })
+       
     }
 
     render() {
         return (
             <div>
+                <br></br>
                 <h2>Add a Dog</h2>
                 <form onSubmit={this.handleSubmit}>
                     <label>Dog's Name:</label>
