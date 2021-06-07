@@ -2,7 +2,7 @@ import { combineReducers } from 'redux'
 import dogReducer from './dogReducer'
 
 const rootReducer = combineReducers({
-    dogReducer,
+    dogReducer
 })
 
 export default rootReducer

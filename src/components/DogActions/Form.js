@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import {addActivity} from '../../actions/dogActions'
+import {addAction} from '../../actions/dogActions'
 
 class Form extends Component {
 
@@ -69,4 +69,4 @@ class Form extends Component {
 }
 
 
-export default connect(null, {addActivity})(Form);
+export default connect(null, {addAction})(Form);
