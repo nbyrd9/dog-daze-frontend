@@ -11,7 +11,6 @@ export const getDogActions = (dogId) => {
 }
 
 export const addAction = (activity, dogId) => {
-    // debugger
     return (dispatch) => {
         // dispatch({type: "ADD_ACTION"}, action) 
         fetch(`http://localhost:3001/dogs/${dogId}/dog_actions`, {
@@ -21,10 +20,9 @@ export const addAction = (activity, dogId) => {
                 'Content-Type':  'application/json'
             }
         })
-        .then(res => {res.json()})
+        .then(res => res.json())
         
         .then(activity => {
-            debugger
             return dispatch({type: "ACTION_ADDED", payload: activity})
         })
     }

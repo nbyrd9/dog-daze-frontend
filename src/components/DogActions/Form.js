@@ -24,7 +24,6 @@ class Form extends Component {
    }
 
    onFormSubmit = event => {
-    //    debugger
        console.log("submit")
        event.preventDefault();
     //    const activity = {...this.state}
@@ -37,7 +36,14 @@ class Form extends Component {
        }
         console.log(activity)
         console.log(this.props.id)
-        this.props.addAction(activity, this.props.id);
+        this.props.addAction(activity, this.props.id)
+        this.setState({
+            mood:"",
+            name: "",
+            time:  "",
+            description:"",
+            dog_id: ""
+        });
     //    dispatch(addAction(activity, this.props.id))
     // addAction(activity, this.props.id)
 

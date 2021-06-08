@@ -17,7 +17,6 @@ class DogInput extends React.Component {
     }
 
     handleSubmit = (event) => {
-        // debugger
         event.preventDefault();
         const dog = {...this.state}
         this.props.addDog(dog)

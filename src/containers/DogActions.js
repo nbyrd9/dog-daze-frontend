@@ -9,8 +9,8 @@ class DogActions extends React.Component {
     
         let dog = this.props.dogs.find(dog => dog.id == this.props.match.params.dogId)
         if (dog) { 
-        const actionsList = dog.dog_actions.map((action, i) => <p key={i}><strong>Mood:</strong>{action.mood}<br/><strong>Time: </strong>{action.time}<br/>
-        <br/><strong>Name:</strong> {action.name}<br/><br/><strong>Description: </strong>{action.description}<br/> </p>)
+        const actionsList = dog.dog_actions.map((action, i) => <p key={i}><strong>Type:</strong> {action.name}<br/><strong>Mood:</strong>{action.mood}<br/><strong>Time: </strong>{action.time}
+        <br/><strong>Description: </strong>{action.description}<br/> </p>)
 
         const action = actionsList.length === 0 ? <i>No Actions Listed</i> : actionsList
 

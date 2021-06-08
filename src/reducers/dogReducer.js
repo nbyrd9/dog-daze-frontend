@@ -1,39 +1,38 @@
-export default function dogReducer(state = {dogs: [], loading:false, value: ''}, action) {
+export default function dogReducer(state = {dogs: [], value: ''}, action) {
     switch(action.type){
         case "LOADING_DOGS":
             return {
                 ...state,
-                loading: true
+                // loading: true
             }
         case "DOGS_LOADED":
             return {
                 dogs: action.payload,
-                loading: false
+                // loading: false
             }
         case "ADD_DOG":
                 return {
                     ...state,
-                    loading: true
+                    // loading: true
                 }
 
         case "DOG_ADDED":
             return {
                 ...state,
                 dogs: [...state.dogs, action.payload],
-                loading: false
+                // loading: false
             }  
             
         case "ADD_ACTION":
             return{
                 ...state,
-                loading: true
+                // loading: true
             }
         case "ACTION_ADDED":
-            debugger
+            
             
             let dog = state.dogs.filter(dog => dog.id == action.payload.dog_id)[0]
-            // console.log()
-            // debugger
+            
             let newAction = {
                 ...dog,
                dog_actions: [...dog.dog_actions, action.payload]
@@ -43,8 +42,8 @@ export default function dogReducer(state = {dogs: [], loading:false, value: ''},
 
             return{
                 ...state,
-                dogs: [...dogs, newAction],
-                loading: false
+                dogs: [...dogs, newAction]
+                // loading: false
             }
 
         default:
