@@ -29,9 +29,11 @@ export default function dogReducer(state = {dogs: [], loading:false, value: ''},
                 loading: true
             }
         case "ACTION_ADDED":
-            
-            let dog = state.dogs.filter(dog => dog.id === action.payload.dog_id)[0]
             debugger
+            
+            let dog = state.dogs.filter(dog => dog.id == action.payload.dog_id)[0]
+            // console.log()
+            // debugger
             let newAction = {
                 ...dog,
                dog_actions: [...dog.dog_actions, action.payload]

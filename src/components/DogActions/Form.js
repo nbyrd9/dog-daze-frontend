@@ -29,16 +29,17 @@ class Form extends Component {
        event.preventDefault();
     //    const activity = {...this.state}
        const activity = {
-           mood: event.target.children[1].value,
-           name: event.target.children[3].value,
-           time: event.target.children[5].value,
-           description: event.target.children[7].value
+           mood: this.state.mood,
+           name: this.state.name,
+           time:  this.state.time,
+           description:  this.state.description,
+           dog_id: this.props.id
        }
         console.log(activity)
         console.log(this.props.id)
-
+        this.props.addAction(activity, this.props.id);
     //    dispatch(addAction(activity, this.props.id))
-    addAction(activity, this.props.id)
+    // addAction(activity, this.props.id)
 
 
     //    this.props.addAction(activity, this.props.id)
@@ -81,7 +82,8 @@ class Form extends Component {
 }
 const mapDispatchToProps = dispatch => {
     return {
-        addAction: (activity, dogId) => dispatch(addAction(activity, dogId))
+        addAction: (activity, dogId) => 
+        dispatch(addAction(activity, dogId)), dispatch
     }
 }
 

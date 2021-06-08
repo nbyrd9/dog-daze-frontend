@@ -7,6 +7,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import {BrowserRouter as Router} from 'react-router-dom'
 import rootReducer from './reducers/rootReducer'
+
 const initialState = {dogs: []}
 
 const store = createStore(rootReducer, initialState, compose(applyMiddleware(thunk), composeWithDevTools()))
