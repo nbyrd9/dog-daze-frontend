@@ -7,8 +7,7 @@ import { BrowserRouter as Router, Route, Switch
  import Resources from './components/Resources';
  import DogInfo from './components/Dogs/DogInfo'
 
-class App extends React.Component {
-  render() {  
+function App (){  
     return (
       <div className="App">
         <Switch>
@@ -24,7 +23,6 @@ class App extends React.Component {
           </Switch>
       </div> 
     );
-  }
 }
 
 export default App;

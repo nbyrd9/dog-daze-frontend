@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Description
+
+DogDaze was designed with the dog lover in mind. Use this application to track and document all of your dog's needs, such as exercise, food, medication, and much more. Track multiple dogs and multiple activities! 
+
+Find the backend for this project here -> [https://github.com/nbyrd9/dog-daze-backend](https://github.com/nbyrd9/dog-daze-backend).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +18,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,7 +33,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `npm eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -65,6 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+### `npm build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/nbyrd9/broadway-love. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://github.com/PurpleBooth/a-good-readme-template/blob/main/CONTRIBUTING.md). 
+
+# License
+This project is licensed under the [CC0 1.0 Universal Creative Commons License](https://github.com/PurpleBooth/a-good-readme-template/blob/main/LICENSE.md) - see the [LICENSE.md](https://github.com/PurpleBooth/a-good-readme-template/blob/main/LICENSE.md) file for details.

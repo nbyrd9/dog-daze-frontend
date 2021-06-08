@@ -12,7 +12,7 @@ const links = {
 }
 
 
-const NavBar = () => {
+export function NavBar() {
   return (
     <div className="topnav" style={{textAlign: "center"}} >
       <br></br>

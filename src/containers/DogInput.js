@@ -7,7 +7,7 @@ class DogInput extends React.Component {
        name: '',
        age: '',
        breed: '',
-       loading: false
+    //    loading: false
     }
 
     handleOnChange = event => {
