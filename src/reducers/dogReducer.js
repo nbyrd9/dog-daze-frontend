@@ -10,11 +10,12 @@ export default function dogReducer(state = {dogs: [], loading:false, value: ''},
                 dogs: action.payload,
                 loading: false
             }
-            case "ADD_DOG":
+        case "ADD_DOG":
                 return {
                     ...state,
                     loading: true
                 }
+
         case "DOG_ADDED":
             return {
                 ...state,
@@ -22,13 +23,15 @@ export default function dogReducer(state = {dogs: [], loading:false, value: ''},
                 loading: false
             }  
             
-        case "ADD_ACTIVITY":
+        case "ADD_ACTION":
             return{
                 ...state,
                 loading: true
             }
-        case "ACTIVITY_ADDED":
+        case "ACTION_ADDED":
+            
             let dog = state.dogs.filter(dog => dog.id === action.payload.dog_id)[0]
+            debugger
             let newAction = {
                 ...dog,
                dog_actions: [...dog.dog_actions, action.payload]

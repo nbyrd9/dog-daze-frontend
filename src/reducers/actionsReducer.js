@@ -1,11 +1,11 @@
 export default function actionsReducer (state = {dailyActions: [], loading:false}, action) {
     switch(action.type){
-        case "LOADING_ACTIVITIES":
+        case "LOADING_ACTIONS":
             return {
                 ...state,
                 loading: true
             }
-        case "ACTIVITIES_LOADED":
+        case "ACTIONS_LOADED":
             return {
                 ...state,
                 dailyActions: action.payload,

@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {addAction} from '../../actions/dogActions'
+// import {dogReducer} from '..'
 
 class Form extends Component {
 
-    state= {
-        name: '',
-        time: '',
-        description: '',
-        mood: '',
-        dog_id: '' 
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: '',
+            time: '',
+            description: '',
+            mood: '',
+            dog_id: '' 
+        }
     }
 
    handleChange = event => {
@@ -23,15 +27,21 @@ class Form extends Component {
     //    debugger
        console.log("submit")
        event.preventDefault();
-       const activity = {...this.state}
+    //    const activity = {...this.state}
+       const activity = {
+           mood: event.target.children[1].value,
+           name: event.target.children[3].value,
+           time: event.target.children[5].value,
+           description: event.target.children[7].value
+       }
+        console.log(activity)
+        console.log(this.props.id)
 
-       this.props.addAction(activity, this.props.id)
-       this.setState({
-        mood: '',
-        name: '',
-        time: '',
-        description: ''
-       });
+    //    dispatch(addAction(activity, this.props.id))
+    addAction(activity, this.props.id)
+
+
+    //    this.props.addAction(activity, this.props.id)
    }
 
    render() {
@@ -69,6 +79,11 @@ class Form extends Component {
        )
    }
 }
+const mapDispatchToProps = dispatch => {
+    return {
+        addAction: (activity, dogId) => dispatch(addAction(activity, dogId))
+    }
+}
 
 
-export default connect(null, {addAction})(Form);
+export default connect(null, mapDispatchToProps)(Form);

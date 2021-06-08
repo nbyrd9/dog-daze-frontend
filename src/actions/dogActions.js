@@ -10,19 +10,19 @@ export const getDogActions = (dogId) => {
     }
 }
 
-export const addAction = (action, dogId) => {
+export const addAction = (activity, dogId) => {
     return(dispatch) => {
-        dispatch({type: "ADD_action"}, action)
-        return fetch(`http://localhost:3001/dogs/${dogId}/dog_actions`, {
+        // dispatch({type: "ADD_ACTION"}, action) 
+        fetch(`http://localhost:3001/dogs/${dogId}/dog_actions`, {
             method: "POST",
-            body: JSON.stringify(action),
+            body: JSON.stringify(activity),
             headers: { 
                 'Content-Type':  'application/json'
             }
         })
         .then(res => res.json())
-        .then(action => {
-            return dispatch({type: "ACTION_ADDED", payload: action})
+        .then(activity => {
+            return dispatch({type: "ACTION_ADDED", payload: activity})
         })
     }
 }
