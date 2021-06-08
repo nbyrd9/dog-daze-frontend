@@ -3,30 +3,30 @@ export default function dogReducer(state = {dogs: [], value: ''}, action) {
         case "LOADING_DOGS":
             return {
                 ...state,
-                // loading: true
+               
             }
         case "DOGS_LOADED":
             return {
                 dogs: action.payload,
-                // loading: false
+             
             }
         case "ADD_DOG":
                 return {
                     ...state,
-                    // loading: true
+             
                 }
 
         case "DOG_ADDED":
             return {
                 ...state,
                 dogs: [...state.dogs, action.payload],
-                // loading: false
+      
             }  
             
         case "ADD_ACTION":
             return{
                 ...state,
-                // loading: true
+
             }
         case "ACTION_ADDED":
             
@@ -43,7 +43,7 @@ export default function dogReducer(state = {dogs: [], value: ''}, action) {
             return{
                 ...state,
                 dogs: [...dogs, newAction]
-                // loading: false
+              
             }
 
         default:
