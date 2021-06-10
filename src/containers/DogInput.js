@@ -6,8 +6,7 @@ class DogInput extends React.Component {
     state={
        name: '',
        age: '',
-       breed: '',
-    //    loading: false
+       breed: ''
     }
 
     handleOnChange = event => {
@@ -23,15 +22,22 @@ class DogInput extends React.Component {
         this.setState({
             name: '',
             age: '',
-            breed: '',
+            breed: ''
         })
        
     }
+
+   
+
+
 
     render() {
         return (
             <div>
                 <br></br>
+               
+
+
                 <h2>Add a Dog</h2>
                 <form onSubmit={this.handleSubmit}>
                     <label>Dog's Name:</label>

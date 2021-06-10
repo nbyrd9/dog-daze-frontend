@@ -1,5 +1,5 @@
 export const getDogs = () => {
-    return (dispatch) => {
+    return function (dispatch) {
        dispatch({type: "LOADING_DOGS"}) 
        return fetch(`http://localhost:3001/dogs`)
        .then(res => res.json())
@@ -12,7 +12,7 @@ export const getDogs = () => {
 
 export const addDog = (dog) => {
 
-    return(dispatch) => {
+    return function (dispatch) {
         dispatch({type: "ADD_DOG"}, dog)
         return fetch(`http://localhost:3001/dogs`, {
             method: "POST",

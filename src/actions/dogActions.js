@@ -1,5 +1,5 @@
 export const getDogActions = (dogId) => {
-    return (dispatch) => {
+    return function (dispatch)  {
        dispatch({type: "LOADING_ACTIVITIES"}) 
        return fetch(`http://localhost:3001/dogs/${dogId}`)
        .then(res => res.json())
@@ -11,7 +11,7 @@ export const getDogActions = (dogId) => {
 }
 
 export const addAction = (activity, dogId) => {
-    return (dispatch) => {
+    return function (dispatch)  {
         // dispatch({type: "ADD_ACTION"}, action) 
         fetch(`http://localhost:3001/dogs/${dogId}/dog_actions`, {
             method: "POST",

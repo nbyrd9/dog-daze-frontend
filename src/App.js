@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch
  import Resources from './components/Resources';
  import DogInfo from './components/Dogs/DogInfo'
 
+ 
 function App (){  
     return (
       <div className="App">

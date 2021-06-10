@@ -62,7 +62,7 @@ class Form extends Component {
                             id="mood"
                             value={mood} 
                             onChange={this.handleChange}/>
-                <label>Type:</label>
+                <label>Category:</label>
                 <input type="text" 
                             name="name" 
                             id="name"

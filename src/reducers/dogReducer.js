@@ -7,26 +7,22 @@ export default function dogReducer(state = {dogs: [], value: ''}, action) {
             }
         case "DOGS_LOADED":
             return {
-                dogs: action.payload,
-             
+                dogs: action.payload             
             }
         case "ADD_DOG":
-                return {
-                    ...state,
-             
-                }
+            return {
+                ...state
+            }
 
         case "DOG_ADDED":
             return {
                 ...state,
-                dogs: [...state.dogs, action.payload],
-      
+                dogs: [...state.dogs, action.payload]
             }  
             
         case "ADD_ACTION":
             return{
-                ...state,
-
+                ...state
             }
         case "ACTION_ADDED":
             
