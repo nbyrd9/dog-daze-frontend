@@ -51,7 +51,9 @@ class Form extends Component {
        const {mood, name, time, description } = this.state;
 
         return (       
+          
             <form onSubmit={this.onFormSubmit}>
+              
                 <label>Mood:</label>
                 <input type="text" 
                             name="mood" 

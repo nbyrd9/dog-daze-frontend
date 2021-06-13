@@ -25,7 +25,7 @@ class DogActions extends React.Component {
              <div>
              </div>
                 {action}  
-          
+                <hr/>
                 <strong><h3>Add a New Action</h3></strong>
                 <br></br>
                 <Form id={this.props.match.params.dogId}/> 
