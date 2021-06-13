@@ -76,7 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/nbyrd9/broadway-love. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://github.com/PurpleBooth/a-good-readme-template/blob/main/CONTRIBUTING.md). 
+Bug reports and pull requests are welcome on GitHub at https://github.com/nbyrd9/dog-daze-frontend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://github.com/PurpleBooth/a-good-readme-template/blob/main/CONTRIBUTING.md). 
 
 # License
 This project is licensed under the [CC0 1.0 Universal Creative Commons License](https://github.com/PurpleBooth/a-good-readme-template/blob/main/LICENSE.md) - see the [LICENSE.md](https://github.com/PurpleBooth/a-good-readme-template/blob/main/LICENSE.md) file for details.
