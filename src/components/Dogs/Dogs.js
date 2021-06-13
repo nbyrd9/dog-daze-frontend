@@ -14,7 +14,7 @@ class Dogs extends Component {
     }
 
 
-
+    
   
     render() {
         const {match} = this.props;
@@ -24,7 +24,7 @@ class Dogs extends Component {
               
                 <h2>Your Dogs</h2>         
                     {this.props.loading ? <h3>...loading dogs! :) </h3> :  this.props.dogs.map((dog, i) => <p key={i}>
-                        <Link to={`${match.path}/${dog.id}`}>{dog.name}</Link></p>  
+                        <Link to={`${match.path}/${dog.id}`}>{dog.name} </Link></p>  
                     )}
                
                 <hr />

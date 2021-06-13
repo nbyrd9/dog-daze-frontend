@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch
  import Dogs from './components/Dogs/Dogs';
  import Resources from './components/Resources';
  import DogInfo from './components/Dogs/DogInfo'
+ import About from './components/About'
 
  
 function App (){  
@@ -19,6 +20,7 @@ function App (){
               <Route path="/dogs" render={props => <Dogs {...props}/>}/>
               <Route exact path="/dogInfo" component={DogInfo} />
               <Route exact path="/resources" component={Resources} />
+              <Route exact path="/about" component={About} />
               </div>
             </Router>
           </Switch>

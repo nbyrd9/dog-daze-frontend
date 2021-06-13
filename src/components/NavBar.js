@@ -17,9 +17,11 @@ export function NavBar() {
     <div className="topnav" style={{textAlign: "center"}} >
       <br></br>
       <NavLink to="/"style={links}>Home</NavLink>
+      <NavLink to="/about" style={links} >About</NavLink>
       <NavLink to="/dogs"style={links} >Dogs</NavLink>
       <NavLink to="/dogInfo"style={links}  >All Dogs</NavLink>
       <NavLink to="/resources" style={links} >Resources</NavLink>
+  
      </div>
   );
 };
