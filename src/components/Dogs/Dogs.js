@@ -40,7 +40,7 @@ class Dogs extends Component {
 const mapStateToProps = state => {
     return{
         dogs: state.dogReducer.dogs,
-        // loading: state.dogReducer.loading
+        loading: state.dogReducer.loading
     }
 }
 

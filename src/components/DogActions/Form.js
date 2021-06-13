@@ -44,11 +44,7 @@ class Form extends Component {
             description:"",
             dog_id: ""
         });
-    //    dispatch(addAction(activity, this.props.id))
-    // addAction(activity, this.props.id)
-
-
-    //    this.props.addAction(activity, this.props.id)
+   
    }
 
    render() {
@@ -62,24 +58,28 @@ class Form extends Component {
                             id="mood"
                             value={mood} 
                             onChange={this.handleChange}/>
+                            
                 <label>Category:</label>
                 <input type="text" 
                             name="name" 
                             id="name"
                             value={name} 
                             onChange={this.handleChange}/>
+                           
                 <label>Time(hh:mm):</label>
                 <input type="text" 
                             name="time" 
                             id="time"
                             value={time} 
                             onChange={this.handleChange}/>
+                            <br></br>
                 <label>Description:</label>
                 <input type="text" 
                             name="description" 
                             id="description"
                             value={description} 
                             onChange={this.handleChange}/> 
+                            <br></br>
                 <button type="submit">Submit</button>  
             </form>
        
