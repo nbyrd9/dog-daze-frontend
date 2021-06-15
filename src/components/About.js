@@ -4,7 +4,7 @@ const About = () => {
     return (
       <div>
           <br></br>
-      <h1 style={{textAlign: "center"}}>How DogDaze Came to Be</h1>
+      <h1 style={{textAlign: "center"}}>Our Story</h1>
       <p> DogDaze began as a small, humble business before becoming one of the world's leading dog management applications. Niani Byrd founded DogDaze in 2021 after finding it difficult to keep track of all of her dogs. One dog needed medication twice daily, and the other needed a more frequent bathroom schedule. It became difficult to keep up! 
           <br></br><br></br>
 
