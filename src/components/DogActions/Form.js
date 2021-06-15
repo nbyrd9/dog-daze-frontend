@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {addAction} from '../../actions/dogActions'
-// import {dogReducer} from '..'
+
 
 class Form extends Component {
 

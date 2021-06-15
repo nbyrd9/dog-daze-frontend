@@ -30,8 +30,7 @@ class DogInfo extends React.Component{
 const mapStateToProps = state => {
     
     return{
-        dogs: state.dogReducer.dogs,
-        loading: state.dogReducer.loading
+        dogs: state.dogReducer.dogs
     }
 }
 
